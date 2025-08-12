@@ -1,0 +1,10 @@
+# .readthedocs.yaml
+version: 2
+
+sphinx:
+  configuration: source/conf.py  # path to your Sphinx conf.py file, update if different
+
+python:
+  version: 3.13  # specify Python version
+  install:
+    - requirements: source/requirements.txt  # install dependencies from here (optional)
