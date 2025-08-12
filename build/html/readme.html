@@ -1,0 +1,191 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>env-check-utils &mdash; env-check-util 0.1.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=a58bc63e"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="core module" href="core.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            env-check-util
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">env_check</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="cli.html">cli module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="core.html">core module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">env-check-utils</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#features">Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">env-check-util</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">env_check</a></li>
+      <li class="breadcrumb-item active">env-check-utils</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/readme.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="env-check-utils">
+<h1>env-check-utils<a class="headerlink" href="#env-check-utils" title="Link to this heading"></a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">env-check-utils</span></code> is a Python package that helps you inspect and manage your environment variables and <code class="docutils literal notranslate"><span class="pre">.env</span></code> files with ease.
+It provides commands to validate <code class="docutils literal notranslate"><span class="pre">.env</span></code> files against a schema, auto-generate schemas, find unused variables, and scan code directories for environment variable usage.</p>
+<hr class="docutils" />
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Link to this heading"></a></h2>
+<p>Install the package from PyPI:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">env</span><span class="o">-</span><span class="n">check</span><span class="o">-</span><span class="n">utils</span>
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading"></a></h2>
+<p>Once installed, you can run it from the command line using:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">env</span><span class="o">-</span><span class="n">check</span> <span class="p">[</span><span class="n">OPTIONS</span><span class="p">]</span>
+</pre></div>
+</div>
+</section>
+<section id="features">
+<h2>Features<a class="headerlink" href="#features" title="Link to this heading"></a></h2>
+<p>Here are all the available options and their descriptions:</p>
+<ol class="arabic">
+<li><p><strong>Validate .env file against a schema</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">env</span><span class="o">-</span><span class="n">check</span> <span class="o">--</span><span class="n">schema</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">schema</span><span class="o">.</span><span class="n">json</span>
+</pre></div>
+</div>
+<p>Validates your <code class="docutils literal notranslate"><span class="pre">.env</span></code> file against a provided JSON schema.
+Ensures that required environment variables exist and have the correct type/format.</p>
+</li>
+<li><p><strong>Auto-generate a schema.json from your .env file</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">env</span><span class="o">-</span><span class="n">check</span> <span class="o">--</span><span class="n">generate</span><span class="o">-</span><span class="n">schema</span>
+</pre></div>
+</div>
+<p>Scans your <code class="docutils literal notranslate"><span class="pre">.env</span></code> file and generates a <code class="docutils literal notranslate"><span class="pre">schema.json</span></code> automatically based on the variables found.
+Useful when starting a new project or documenting existing variables.</p>
+</li>
+<li><p><strong>Find unused environment variables</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">env</span><span class="o">-</span><span class="n">check</span> <span class="o">--</span><span class="n">check</span><span class="o">-</span><span class="n">unused</span>
+</pre></div>
+</div>
+<p>Checks for environment variables present in your <code class="docutils literal notranslate"><span class="pre">.env</span></code> file but not used anywhere in your project.
+Helps keep your environment files clean and free from unnecessary variables.</p>
+</li>
+<li><p><strong>Scan a specific code directory for environment variable usage</strong>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">env</span><span class="o">-</span><span class="n">check</span> <span class="o">--</span><span class="n">path</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">code</span>
+</pre></div>
+</div>
+<p>Scans the given directory for usage of environment variables.
+Useful for identifying where variables are referenced in your codebase.</p>
+</li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Link to this heading"></a></h2>
+<p>Example 1: Validate <code class="docutils literal notranslate"><span class="pre">.env</span></code> with a schema:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">env</span><span class="o">-</span><span class="n">check</span> <span class="o">--</span><span class="n">schema</span> <span class="n">config</span><span class="o">/</span><span class="n">schema</span><span class="o">.</span><span class="n">json</span>
+</pre></div>
+</div>
+<p>Example 2: Auto-generate schema from <code class="docutils literal notranslate"><span class="pre">.env</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">env</span><span class="o">-</span><span class="n">check</span> <span class="o">--</span><span class="n">generate</span><span class="o">-</span><span class="n">schema</span>
+</pre></div>
+</div>
+<p>Example 3: Find unused variables:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">env</span><span class="o">-</span><span class="n">check</span> <span class="o">--</span><span class="n">check</span><span class="o">-</span><span class="n">unused</span>
+</pre></div>
+</div>
+<p>Example 4: Scan a project folder:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">env</span><span class="o">-</span><span class="n">check</span> <span class="o">--</span><span class="n">path</span> <span class="o">./</span><span class="n">src</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="core.html" class="btn btn-neutral float-left" title="core module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, Rohit Thakan.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
