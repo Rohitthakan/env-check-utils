@@ -55,3 +55,8 @@ env-check --check-unused
 
 # Example 4: Scan a project folder
 env-check --path ./src
+
+## Documentation
+
+You can find the full documentation online at:  
+https://env-check-utils.readthedocs.io/en/latest/
